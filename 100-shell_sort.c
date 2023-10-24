@@ -6,7 +6,7 @@
  * @h: second integer to swap
  */
 
-void swap_int(int *g, int *h)
+void swaps_ints(int *g, int *h)
 {
 	int temp;
 
@@ -34,12 +34,12 @@ void shell_sorts(int *array, size_t size)
 	for (interval = 1; interval < (size / 3); )
 		interval = interval * 3 + 1;
 
-	for (; gap >= 1; gap /= 3)
+	for (; interval >= 1; interval /= 3)
 	{
-		for (k = gap; k < size; k++)
+		for (k = interval; k < size; k++)
 		{
 			k = L;
-			while (interval && array[L - interval] <= L > array[L])
+			while (L >= interval && array[L - interval] > array[L])
 			{
 				swaps_ints(array + L, array + (L - interval));
 				L -= interval;

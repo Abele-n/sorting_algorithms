@@ -43,7 +43,7 @@ void bubble_sort(int *array, size_t size)
 				is_bubbly = false;
 			}
 		}
-		len–;
+		len--;
 	}
 }
 

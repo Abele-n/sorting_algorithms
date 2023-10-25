@@ -27,10 +27,9 @@ void bubble_sort(int *array, size_t size)
 {
 	size_t m, len = size;
 	bool is_bubbly = false;
-
+	
 	if (array == NULL || size < 2)
 		return;
-
 	while (is_bubbly == false)
 	{
 		is_bubbly = true;
@@ -46,4 +45,3 @@ void bubble_sort(int *array, size_t size)
 		len--;
 	}
 }
-
